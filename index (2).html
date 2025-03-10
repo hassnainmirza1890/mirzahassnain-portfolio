@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirza Hassnain - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        #hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(45deg, #f39c12, #8e44ad);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .hero-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #f39c12;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        section {
+            padding: 50px 0;
+        }
+        footer {
+            background: #1f1f1f;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .admin-panel {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .admin-btn {
+            background: #e74c3c;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .admin-btn:hover {
+            background: #c0392b;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            .hero-content h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mirza Hassnain</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#crypto-signals">Crypto Signals</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Showcasing my skills, blogs, and premium crypto signals.</p>
+            <a href="#crypto-signals" class="btn">Explore Crypto Signals</a>
+        </div>
+    </section>
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am Mirza Hassnain, a digital marketer, crypto expert, and AI enthusiast.</p>
+    </section>
+    
+    <section id="crypto-signals" class="container">
+        <h2>Crypto Signals</h2>
+        <p>Get real-time profitable signals with expert analysis.</p>
+        <a href="#" class="btn">Subscribe Now</a>
+    </section>
+    
+    <section id="blog" class="container">
+        <h2>Blog</h2>
+        <p>Stay updated with the latest trends and insights.</p>
+        <a href="#" class="btn">Read More</a>
+    </section>
+    
+    <section class="admin-panel">
+        <h2>Admin Panel</h2>
+        <button class="admin-btn" onclick="addCryptoSignal()">Add Crypto Signal</button>
+        <button class="admin-btn" onclick="addBlogPost()">Add Blog Post</button>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mirza Hassnain. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function addCryptoSignal() {
+            alert("Redirecting to Crypto Signal addition page...");
+        }
+        function addBlogPost() {
+            alert("Redirecting to Blog Post addition page...");
+        }
+    </script>
+</body>
+</html>
